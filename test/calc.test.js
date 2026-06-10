@@ -6,7 +6,9 @@ test("add", () => {
   assert.strictEqual(calc.add(2, 3), 5);
 });
 
-// Pipeline ticket target: multiply is expected but not yet implemented.
 test("multiply", () => {
   assert.strictEqual(calc.multiply(2, 3), 6);
+  assert.strictEqual(calc.multiply(0, 5), 0);
+  assert.strictEqual(calc.multiply(-2, 3), -6);
+  assert.strictEqual(calc.multiply(1.5, 2), 3);
 });
