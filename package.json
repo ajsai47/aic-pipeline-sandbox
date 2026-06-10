@@ -1,0 +1,10 @@
+{
+  "name": "aic-pipeline-sandbox",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Throwaway sandbox for testing AJ's aic-* pipeline (build→pr→review→merge). Safe to delete.",
+  "scripts": {
+    "test": "node --test",
+    "build": "node -e \"require('./src/calc.js'); console.log('build ok')\""
+  }
+}
